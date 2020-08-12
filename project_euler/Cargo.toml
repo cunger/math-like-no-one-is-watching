@@ -1,0 +1,7 @@
+[package]
+name = "project_euler"
+version = "0.1.0"
+authors = ["Christina Unger <christina@unger.dev>"]
+edition = "2018"
+
+[dependencies]
