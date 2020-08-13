@@ -6,7 +6,9 @@
 // What is the largest prime factor of the number 600851475143?
 // ----------------------------------------------------------------------------
 
-pub fn solve() -> u64 {
+use crate::math::number;
+
+pub fn solve() -> i64 {
   let num = 600_851_475_143;
 
   if number::is_prime(num) {
