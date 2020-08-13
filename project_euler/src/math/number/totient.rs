@@ -16,6 +16,7 @@ pub fn phi(n: i64) -> i64 {
 
 #[cfg(test)]
 mod tests {
+  use super::*;
 
   #[test]
   fn sample_cases() {

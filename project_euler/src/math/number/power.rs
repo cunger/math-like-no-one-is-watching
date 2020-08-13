@@ -14,6 +14,7 @@ pub fn is_perfect_power(n: i64) -> bool {
 
 #[cfg(test)]
 mod tests {
+  use super::*;
 
   #[test]
   fn sample_cases() {

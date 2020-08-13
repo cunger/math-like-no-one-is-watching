@@ -18,6 +18,7 @@ pub fn greatest_common_divisor(a: i64, b: i64) -> i64 {
 
 #[cfg(test)]
 mod tests {
+  use super::*;
 
   #[test]
   fn gcd_sample_cases() {
