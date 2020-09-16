@@ -21,9 +21,9 @@ program problem1
 
   write (*,*) sum
 
-  contains
+contains
 
-  real(dp) function arithmetic_sum (n, a_1, a_n) result(sum)
+  real(dp) function arithmetic_sum(n, a_1, a_n) result(sum)
     implicit none
 
     ! Calculates the sum of an arithmetic sequence using the
