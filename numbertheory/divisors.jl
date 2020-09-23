@@ -65,11 +65,11 @@ end
 using Test
 
 @testset "Greatest common divisor" begin
-  @test greatest_common_divisor(3, 3) == 3;
-  @test greatest_common_divisor(4, 6) == 2;
-  @test greatest_common_divisor(0, 6) == 6;
-  @test greatest_common_divisor(14, 15) == 1;
-  @test greatest_common_divisor(578, -442) == 34;
+  @test greatest_common_divisor(3, 3) == 3
+  @test greatest_common_divisor(4, 6) == 2
+  @test greatest_common_divisor(0, 6) == 6
+  @test greatest_common_divisor(14, 15) == 1
+  @test greatest_common_divisor(578, -442) == 34
 end
 
 @testset "Extended greatest common divisor" begin
@@ -79,10 +79,10 @@ end
 end
 
 @testset "Least common multiple" begin
-  @test least_common_multiple(3, 3) == 3;
-  @test least_common_multiple(6, 8) == 24;
-  @test least_common_multiple(6, -8) == 24;
-  @test least_common_multiple(21, 31) == 651;
+  @test least_common_multiple(3, 3) == 3
+  @test least_common_multiple(6, 8) == 24
+  @test least_common_multiple(6, -8) == 24
+  @test least_common_multiple(21, 31) == 651
 end
 
 @testset "Solving Diophantian equations" begin
