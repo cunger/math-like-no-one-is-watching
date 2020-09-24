@@ -22,6 +22,23 @@ function is_prime(n::Int64)
   return true
 end
 
+# Sieve of Eratosthenes
+function primes_until(n::Int64)
+  primes = [p for p in 2:n]
+
+  index = 1
+  while index <= length(primes)
+    d = primes[index]
+
+    filter!(p -> p == d || p % d != 0, primes)
+
+    if isempty(primes) break end
+    index += 1
+  end
+
+  primes
+end
+
 # Tests
 
 using Test
@@ -32,4 +49,8 @@ using Test
   @test is_prime(3)
   @test !is_prime(21)
   @test is_prime(23)
+end
+
+@testset "Prime generation" begin
+  @test [2, 3, 5, 7] == primes_until(10)
 end
