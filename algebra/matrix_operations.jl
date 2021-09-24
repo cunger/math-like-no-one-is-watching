@@ -52,3 +52,5 @@ function matrix_multiplication(m1::Matrix, m2::Matrix)
 end
 
 Base.:*(m1::Matrix, m2::Matrix) = matrix_multiplication(m1, m2)
+
+end
