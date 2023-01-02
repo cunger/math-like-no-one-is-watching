@@ -136,4 +136,9 @@ function coefficient_string(coefficient)
   end
 end
 
+f = [0.0, 0.0, -2.0, 1.0, -1.0, 1.0, 1.0];
+g = [-1.0, 1.0, 0.0, 1.0, 1.0];
+
+println(to_string(f));
+println(to_string(g));
 end
