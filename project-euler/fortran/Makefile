@@ -1,4 +1,4 @@
-FC = gfortran-8
+FC = gfortran-9
 
 clean:
 	rm -f *.o *.mod *.smod a.out
@@ -8,6 +8,9 @@ clean:
 
 2: problem2.f90
 	$(FC) $^ -o problem2
+
+3: problem3.f90
+	$(FC) $^ -o problem3
 
 4: problem4.f90
 	$(FC) $^ -o problem4
